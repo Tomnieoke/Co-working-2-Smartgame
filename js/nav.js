@@ -18,5 +18,6 @@
       "aria-hidden",
       hamburger.getAttribute("aria-hidden") === "true" ? "false" : "true"
     );
+    menu.classList.toggle("active");
   });
 })();

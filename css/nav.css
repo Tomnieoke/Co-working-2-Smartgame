@@ -8,6 +8,7 @@ header nav ul li {
 }
 header nav ul {
   padding: 0 2rem;
+  margin: 0;
 }
 header nav a {
   text-decoration: none;
@@ -42,16 +43,15 @@ header .header-alles {
   z-index: 2;
 }
 #menu {
-  position: relative;
+  position: absolute;
   top: 3em;
-  animation: fadeOut 0.3s ease-in-out;
   background-color: black;
   padding: 0.5em;
   border-radius: 0 0.5em 0.5em 0;
   z-index: 2;
 }
 #menu.active {
-  position: relative;
+  position: absolute;
   top: 3em;
   left: 6.5em;
   background-color: black;
@@ -103,6 +103,12 @@ header .header-alles {
 .header-nav a {
   text-decoration: none;
   color: black;
+}
+
+@media (min-width: 62em) {
+  #menu {
+    display: none;
+  }
 }
 
 @keyframes fadeOut {

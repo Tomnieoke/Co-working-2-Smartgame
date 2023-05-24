@@ -15,7 +15,7 @@ header nav a {
   color: rgb(255, 255, 255);
 }
 header nav[aria-expanded="false"] {
-  animation: fadeOut 0.3s ease-in-out;
+  animation: fadeIn 0.3s ease-in-out;
   animation-fill-mode: forwards;
   background-color: black;
   max-width: 10em;
@@ -23,7 +23,7 @@ header nav[aria-expanded="false"] {
   z-index: 2;
 }
 header nav[aria-expanded="true"] {
-  animation: fadeIn 0.3s ease-in-out;
+  animation: fadeOut 0.3s ease-in-out;
   animation-fill-mode: forwards;
   background-color: black;
   max-width: 10em;
